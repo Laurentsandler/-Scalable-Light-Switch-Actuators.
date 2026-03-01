@@ -106,17 +106,30 @@ uint8_t module2MAC[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 - **Blynk**: Remote switch control (V0–V4)
 - **ESP-NOW**: Local wireless communication between base and modules
 
-## BOM
+## Bill of Materials (BOM)
 
-| Component | Footprint | Quantity | Notes | Est. Price |
-|-----------|-----------|----------|-------|------------|
-| ESP32-C3-WROOM-02 | SMD Module | 1 per module | ~18×20mm | ~$3 |
-| SG90 Servo | Through-hole wires | 1 per module | Standard micro servo | ~$2 |
-| LiPo Battery | Fits SG90 footprint | 1 per module | High capacity | ~$5 |
-| CH340 USB-Serial | SMD | 1 per module | For programming | ~$0.50 |
-| USB-C Connector | SMD | 1 per module | For charging | ~$0.30 |
-| Tactile Button | SMD | 1 per module | Physical toggle | ~$0.10 |
-| ESP32 Dev Board | Through-hole | 1 (base only) | Always-on base station | ~$5 |
+Final Actuator — March 2026
+
+| # | Name | Designator | Footprint | Qty | Manufacturer Part | Manufacturer | Supplier | Supplier Part | Price | JLCPCB Part Class | Value |
+|---|------|-----------|-----------|-----|------------------|-------------|---------|--------------|-------|------------------|-------|
+| 1 | 10uF | C1,C5,C8,C9 | C0603 | 4 | CL10A106KP8NNNC | SAMSUNG | LCSC | C19702 | $0.007 | Basic Part | |
+| 2 | 100nF | C4,C6 | C0603 | 2 | CC0603KRX7R9BB104 | YAGEO | LCSC | C14663 | $0.002 | Basic Part | |
+| 3 | 1uF | C7 | C0805 | 1 | CL21B105KBFNNNE | SAMSUNG | LCSC | C28323 | $0.010 | Basic Part | |
+| 4 | B2B-PH-K-S(LF)(SN) | CN1 | CONN-TH_B2B-PH-K-S | 1 | B2B-PH-K-S(LF)(SN) | JST | LCSC | C131337 | $0.031 | Extended Part | |
+| 5 | B5819W_C8598 | D1 | SOD-123 | 1 | B5819W SL | CJ | LCSC | C8598 | $0.024 | Basic Part | |
+| 6 | AO3401A | Q1 | SOT-23 | 1 | AO3401A | AOS | LCSC | C15127 | $0.057 | Basic Part | |
+| 7 | 5.1kΩ | R1,R2 | R0603 | 2 | 0603WAF5101T5E | UNI-ROYAL | LCSC | C23186 | $0.001 | Basic Part | |
+| 8 | 100kΩ | R3 | R0603 | 1 | 0603WAF1003T5E | UNI-ROYAL | LCSC | C25803 | $0.001 | Basic Part | |
+| 9 | 2kΩ | R4 | R0603 | 1 | 0603WAF2001T5E | UNI-ROYAL | LCSC | C22975 | $0.001 | Basic Part | |
+| 10 | 10kΩ | R5,R6,R7,R8 | R0603 | 4 | 0603WAF1002T5E | UNI-ROYAL | LCSC | C25804 | $0.001 | Basic Part | |
+| 11 | TS-1088-AR02016 | SW1,SW2 | SW-SMD | 2 | TS-1088-AR02016 | XUNPU | LCSC | C720477 | $0.048 | Basic Part | |
+| 12 | TP4054A | U1 | SOT-23-5 | 1 | TP4054A | YONGYUTAI | LCSC | C33551022 | $0.031 | Extended Part | |
+| 13 | ESP32-C3-WROOM-02-N4 (4MB) | U5 | Module | 1 | ESP32-C3-WROOM-02-N4 | ESPRESSIF | LCSC | C2934560 | $3.067 | Extended Part | |
+| 14 | CH340N | U6 | SOP-8 | 1 | CH340N | WCH | LCSC | C2977777 | $0.561 | Extended Part | |
+| 15 | TPS73633DBVR | U7 | SOT-23-5 | 1 | TPS73633DBVR | TI | LCSC | C28038 | $0.422 | Extended Part | |
+| 16 | TYPE-C-31-M-12 | USBC1 | USB-C SMD | 1 | TYPE-C-31-M-12 | 韩国韩荣 | LCSC | C165948 | $0.183 | Extended Part | |
+| 17 | 1kΩ | R9 | R0603 | 1 | 0603WAD1001T5E | UNI-ROYAL | LCSC | C51218 | $0.007 | Extended Part | 1kΩ |
+| 18 | LED (Yellow) | LED2 | LED0805 | 1 | 17-215UYC/S530-A3/TR8 | EVERLIGHT | LCSC | C72036 | $0.054 | Extended Part | |
 
 ## License
 
