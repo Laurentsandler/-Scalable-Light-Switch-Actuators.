@@ -4,7 +4,7 @@ Small battery-powered automatic light switch actuators powered by ESP32.
 
 ## Description
 
-A solution for renters who cannot install smart light switches. These small, battery-powered actuators mount on the outside of existing light switches and physically toggle them using a servo motor. They connect together over ESP-NOW (no Wi-Fi needed per module) via a central base station that handles Blynk/HomeKit integration. Up to 5 modules can be controlled from one base station.
+A solution for renters who cannot install smart light switches. These small, battery-powered actuators mount on the outside of existing light switches and physically toggle them using a servo motor. They connect together over ESP-NOW (no Wi-Fi needed per module) via a central base station that handles Blynk/HomeKit integration. Up to 20 modules can be controlled from one base station, due to EspNow restrictions
 
 ## My Motivation
 
